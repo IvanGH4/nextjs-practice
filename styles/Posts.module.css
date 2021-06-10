@@ -1,0 +1,30 @@
+.postsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postCard {
+  width: 100%;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.postCard:hover {
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.truncated {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.formControl {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
