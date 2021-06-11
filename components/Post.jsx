@@ -4,7 +4,7 @@ import styles from "../styles/Posts.module.css";
 
 function Post({ post }) {
   return (
-    <div className="p-4">
+    <div className="p-4 w-1/2 border-b-2 border-blue-700">
       <Link href="/posts/[id]" as={`/posts/${post._id}`}>
         <a className="hover:text-blue-500 transition">
           <h2 className="text-xl font-semibold">{post.title}</h2>

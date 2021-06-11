@@ -6,7 +6,7 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <div className="bg-gray-400 dark:bg-gray-600 min-h-screen">
       <Provider store={store}>
         <PersistGate persistor={persistor} loading={null}>
           <Navbar />
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
           </div>
         </PersistGate>
       </Provider>
-    </>
+    </div>
   );
 }
 

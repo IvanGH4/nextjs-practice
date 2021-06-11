@@ -52,7 +52,7 @@ function index() {
       <div className="flex flex-col items-center justify-center">
         <form onSubmit={(e) => e.preventDefault()} className="w-1/2">
           <div className="flex flex-col justify-start items-start mb-2">
-            <label htmlFor="user" className="mb-1">
+            <label htmlFor="user" className="mb-1 text-gray-100">
               Email or Username
             </label>
             <input
@@ -62,11 +62,11 @@ function index() {
               placeholder="example@mail.com"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="border focus:border-blue-900 rounded-sm px-2 w-full"
+              className="border-b-2 border-blue-700 bg-transparent focus:ring-2 focus:ring-blue-900 rounded-sm px-2 py-1 w-full"
             />
           </div>
           <div className={styles.formControl}>
-            <label htmlFor="password" className="mb-1">
+            <label htmlFor="password" className="mb-1 text-gray-100">
               Password
             </label>
             <input
@@ -76,7 +76,7 @@ function index() {
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="border focus:border-blue-900 rounded-sm px-2 w-full"
+              className="border-b-2 border-blue-700 bg-transparent focus:ring-2 focus:ring-blue-900 rounded-sm px-2 py-1 w-full"
             />
           </div>
           <div className={styles.formControl}>
